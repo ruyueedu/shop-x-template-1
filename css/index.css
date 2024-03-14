@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Nunito, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #212529;
+}
+
+@media (min-width: 768px) {
+    .h-md-100-v {
+        height: 100vh;
+    }
+
+    .h-md-100 {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+    .h-xl-300 {
+        height: 300px;
+    }
+
+    .h-max-380 {
+        max-height: 380px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .h-xl-560 {
+        max-height: 560px;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.text-white-100 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-primary {
+    fill: #CA7A2C !important;
+}
+
+.bg-primary {
+    background-color: #CA7A2C !important;
+}
+
+.bg-secondary {
+    background-color: #adb3b9 !important;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+}
+
+.nav.nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.nav.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #424242 !important;
+    font-size: 1rem;
+}
+
+/* shop.html */
+.product-wrapper .card .card-body {
+    height: auto;
+    margin-bottom: calc(var(--base-fs) * 23);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.0725);
+}
+
+.product-wrapper .card .card-body a {
+    border: 1px solid black;
+}
+
+.product-wrapper .card .card-body .item__info {
+    overflow: hidden;
+    text-align: start;
+    padding-top: .5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #c5c5c5;
+}
+
+.item__info {
+    /* width: fit-content; */
+    position: relative;
+    padding-left: calc(var(--base-fs) * 6);
+    padding-right: calc(var(--base-fs) * 6);
+    padding-bottom: calc(var(--base-fs) * 9);
+    background: var(--clr-gray-blue);
+    z-index: 2;
+}
+
+.item-img {
+    background: initial;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767.98px) {
+    .item-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .item-img:hover {
+        transition-duration: .6s;
+        transform: scale(1.1);
+    }
+
+    .item-img:hover .new-item-cover {
+        opacity: 1;
+    }
+}
+
+
+/* navbar */
+.tofront {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+.jumbotron {
+    background-size: cover;
+    padding: 7rem 1rem;
+}
+
+@media (min-width: 992px) {
+    .jumbotron-lg-withnav {
+        padding-bottom: calc(10rem - 70px);
+    }
+
+    .jumbotron-lg {
+        padding: 10rem 0;
+    }
+
+    .jumbotron-xl {
+        padding: 15rem 0;
+    }
+
+    .jumbotron-xl {
+        min-height: 100vh;
+    }
+
+    .bottom-align-text-absolute {
+        position: absolute;
+        bottom: 30px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.banner-bg {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 660px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, #000000, #270800);
+    opacity: .7;
+}
+
+.banner-bg .banner-text {
+    z-index: 1;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+/* footer */
+.footer {
+    background-color: black;
+}

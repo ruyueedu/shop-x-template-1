@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>購物網站</title>
+	<!-- Favicon -->
+	<link rel="icon" sizes="16x16" type="imgage/png" href="./img/favicon.png">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=""
+		crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<!-- Main CSS -->
+	<link href="./css/index.css" rel="stylesheet" />
+	<!-- <link href="./assets/css/main.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+	<!--------------------------------------NAVBAR--------------------------------------->
+	<nav class="topnav navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html"><strong>購物網站</strong></a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02"
+				aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto d-flex align-items-center">
+					<li class="nav-item"><a class="nav-link text-white-100" href="./index.html">首頁</a></li>
+					<li class="nav-item"><a class="nav-link text-white-100" href="./shop.html">商品頁面</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto d-flex align-items-center">
+					<li class="nav-item mr-2 dropdown">
+						<a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
+							data-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-user mr-2"></i>會員中心
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="./login.html">會員登入</a>
+							<a class="dropdown-item" href="./orders.html">訂單查詢</a>
+							<a class="dropdown-item" href="./checkout.html">結帳</a>
+						</div>
+					</li>
+					<li class="nav-item mr-2 text-white-100">|</li>
+					<li class="nav-item mr-2">
+						<a class="nav-link text-white-100" href="./cart.html">
+							<i class="fas fa-shopping-cart mr-2"></i>購物車
+						</a>
+					</li>
+					<li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--------------------------------------HEADER--------------------------------------->
+
+	<!-- Main -->
+	<div class="d-md-flex h-md-100 align-items-center">
+		<div class="col-md-6 p-0 h-md-100">
+			<div class="d-md-flex align-items-center h-100 p-5 text-center justify-content-center bg-primary shadow">
+				<div class="p-5 text-white">
+					<p>
+						<i class="fas fa-store fa-3x"></i>
+					</p>
+					<h1 class="mb-4 mt-3 display-4">購物網站</h1>
+					<h5 class="mb-4 font-weight-light">還沒有會員？
+						<a class="text-primary" href="./signup.html">點擊註冊</a>
+					</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+			<div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+				<form class="border rounded p-5">
+					<h3 class="mb-4 text-center">會員登入</h3>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+							placeholder="E-mail" required="">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="輸入密碼"
+							required="">
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label small text-muted" for="exampleCheck1">記住帳號</label>
+					</div>
+					<button type="submit" class="btn btn-success btn-round btn-block shadow-sm">登入</button>
+					<small class="d-block mt-4 text-center"><a class="text-gray" href="#">忘記密碼？</a></small>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- End Main -->
+
+	<!--------------------------------------FOOTER--------------------------------------->
+	<footer class="footer py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mr-4">
+					<small class="d-block text-center text-muted">
+						&copy;
+						<script>document.write(new Date().getFullYear())</script>
+						<span>購物商城</span>
+						All rights reserved.
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	<!--------------------------------------JAVASCRIPTS--------------------------------------->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

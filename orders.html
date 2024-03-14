@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>購物網站</title>
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" type="imgage/png" href="./img/favicon.png">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=""
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--------------------------------------NAVBAR--------------------------------------->
+    <nav class="topnav navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><strong>購物網站</strong></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                    <li class="nav-item"><a class="nav-link text-white-100" href="./index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-100" href="./shop.html">商品頁面</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item mr-2 dropdown">
+                        <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user mr-2"></i>會員中心
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./login.html">會員登入</a>
+                            <a class="dropdown-item" href="./orders.html">訂單查詢</a>
+                            <a class="dropdown-item" href="./checkout.html">結帳</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2 text-white-100">|</li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-white-100" href="./cart.html">
+                            <i class="fas fa-shopping-cart mr-2"></i>購物車
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------MAIN--------------------------------------->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="mb-4">訂單查詢</h1>
+            <div class="row g-5">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <!-- 1 -->
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <div class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        訂單日期 2024/03/13 02:48:56
+                                        <span class="float-right"><i class="fas fa-chevron-down fa-xs"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 bg-light">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">產品</th>
+                                                            <th scope="col">名稱</th>
+                                                            <th scope="col">價格</th>
+                                                            <th scope="col">數量</th>
+                                                            <th scope="col">小計</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="d-flex align-items-center mt-2">
+                                                                    <img src="./img/product.jpg" class="img-fluid"
+                                                                        style="width: 90px; height: 90px;" alt="">
+                                                                </div>
+                                                            </th>
+                                                            <td class="py-5">apple 15</td>
+                                                            <td class="py-5">$ 99999</td>
+                                                            <td class="py-5">1</td>
+                                                            <td class="py-5">$ 99999</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="d-flex justify-content-between mb-4">
+                                                    <h5 class="mb-0 mr-4">小計：</h5>
+                                                    <p class="mb-0">$ 99999</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <h5 class="mb-0 mr-4">運費：</h5>
+                                                    <div class="">
+                                                        <p class="mb-0">$ 100</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="p-4 mb-4 border-top border-bottom d-flex justify-content-between">
+                                                <h5 class="mb-0 ps-4 mr-4">合計：</h5>
+                                                <p class="mb-0 pe-4">$ 99999</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div
+                                                class="p-4 d-flex align-items-center justify-content-between border-bottom">
+                                                <p class="font-weight-bolder text-muted mb-0 mr-4">訂單標號</p>
+                                                <p class="mb-0">20240313</p>
+                                            </div>
+                                            <div class="p-4 border-bottom d-flex justify-content-between">
+                                                <p class="font-weight-bolder text-muted mb-0 mr-4">訂購人</p>
+                                                <p class="mb-0">***</p>
+                                            </div>
+                                            <div class="p-4 border-bottom d-flex justify-content-between">
+                                                <p class="mb-0 ps-4 mr-4">連絡電話</p>
+                                                <p class="mb-0">***</p>
+                                            </div>
+                                            <div class="p-4 border-bottom d-flex justify-content-between">
+                                                <p class="font-weight-bolder text-muted mb-0 mr-4">付款方式</p>
+                                                <div class="">
+                                                    <p class="mb-0">信用卡</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="font-weight-bolder text-muted mb-0 mr-4">訂單狀態</p>
+                                                    <div class="">
+                                                        <p class="mb-0">已完成</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        訂單日期 2024/03/13 02:48:56
+                                        <span class="float-right"><i class="fas fa-chevron-down fa-xs"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------FOOTER--------------------------------------->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mr-4">
+                    <small class="d-block text-center text-muted">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        <span>購物商城</span>
+                        All rights reserved.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!--------------------------------------JAVASCRIPTS--------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
