@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>購物網站</title>
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" type="imgage/png" href="./img/favicon.png">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=""
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--------------------------------------NAVBAR--------------------------------------->
+    <nav class="topnav navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><strong>購物網站</strong></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                    <li class="nav-item"><a class="nav-link text-white-100" href="./index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-100" href="./shop.html">商品頁面</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item mr-2 dropdown">
+                        <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
+                            data-toggle="dropdown" aria-expanded="false">
+                            會員中心
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./login.html">會員登入</a>
+                            <a class="dropdown-item" href="./orders.html">訂單查詢</a>
+                            <a class="dropdown-item" href="#!">登出</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link btn btn-primary px-4 rounded-pill text-white-100" href="./cart.html">
+                            購物車
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------MAIN--------------------------------------->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="mb-4">訂單資料</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class=" rounded-0 mb-4">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">訂單標號</p>
+                                <p class="mb-0">12078</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">日期</p>
+                                <p class="mb-0">2024/03/18</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">總計</p>
+                                <p class="mb-0">$ 99999</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top border-bottom">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">付款方式</p>
+                                <p class="mb-0">數支付</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card bg-light rounded-0 mb-4">
+                        <h2 class="ml-4 my-4 font-weight-bolder">支付方式</h2>
+                        <div class="p-4 border-top">
+                            <!-- 1.ATM -->
+                            <h5 class="mb-0 mr-4 font-weight-bolder">請通過 ATM 或 WebATM 進行付款</h5>
+                            <!-- 2.超商 -->
+                            <h5 class="mb-0 mr-4 font-weight-bolder">請通過 7-ELEVEN/全家/萊爾富/OK 繳費</h5>
+                        </div>
+                        <div class="p-4 border-top">
+                            <!-- 1.ATM -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">匯款銀行</p>
+                                <p class="mb-0">中國信託銀行</p>
+                            </div>
+                            <!-- 2.超商 -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">繳費超商</p>
+                                <p class="mb-0">全家</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <!-- 1.ATM -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">匯款帳號</p>
+                                <p class="mb-0">請查看手機輸入驗證碼後取號付款(OTP驗證)</p>
+                            </div>
+                            <!-- 2.超商 -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">繳費代碼</p>
+                                <p class="mb-0">請查看手機輸入驗證碼後取號付款(OTP驗證)</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <!-- 1.ATM -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">匯款金額</p>
+                                <p class="mb-0">99999 元</p>
+                            </div>
+                            <!-- 2.超商 -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">繳費金額</p>
+                                <p class="mb-0">99999 元</p>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <!-- 1.ATM -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">匯款截止</p>
+                                <p class="mb-0">2024/03/18 15:32:01</p>
+                            </div>
+                            <!-- 2.超商 -->
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">繳費截止</p>
+                                <p class="mb-0">2024/03/18 15:32:01</p>
+                            </div>
+                        </div>
+                        <!-- 2.超商 -->
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0 mr-4 font-weight-bolder">繳費門市</p>
+                                <p class="mb-0">[全家超商]新德店 - 八德路一段43巷2號 #018932#</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 返回首頁 -->
+            <div class="row text-center align-items-center justify-content-center pt-5">
+                <div class="col-12">
+                    <a href="./payment.html" type="button" class="text-secondary mb-4">返回首頁</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------FOOTER--------------------------------------->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mr-4">
+                    <small class="d-block text-center text-muted">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        <span>購物商城</span>
+                        All rights reserved.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!--------------------------------------JAVASCRIPTS--------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function showDiv(element) {
+            document.querySelector('.hidden_div').style.display = element.value == "ATM" ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+
+</html>

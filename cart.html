@@ -36,21 +36,19 @@
                     <li class="nav-item mr-2 dropdown">
                         <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
                             data-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user mr-2"></i>會員中心
+                            會員中心
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./login.html">會員登入</a>
                             <a class="dropdown-item" href="./orders.html">訂單查詢</a>
-                            <a class="dropdown-item" href="./checkout.html">結帳</a>
+                            <a class="dropdown-item" href="#!">登出</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 text-white-100">|</li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white-100" href="./cart.html">
-                            <i class="fas fa-shopping-cart mr-2"></i>購物車
+                        <a class="nav-link btn btn-primary px-4 rounded-pill text-white-100" href="./cart.html">
+                            購物車
                         </a>
                     </li>
-                    <li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
                 </ul>
             </div>
         </div>
@@ -67,84 +65,78 @@
                             <th scope="col">名稱</th>
                             <th scope="col">價格</th>
                             <th scope="col">數量</th>
-                            <th scope="col">小計</th>
                             <th scope="col">刪除</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">
-                                <div class="d-flex align-items-center">
-                                    <img src="./img/product.jpg" class="img-fluid mr-5"
-                                        style="width: 80px; height: 80px;" alt="">
-                                </div>
-                            </th>
                             <td>
-                                <p class="mb-0 mt-4">apple 15</p>
+                                <div class="d-flex align-items-center mb-0 mt-4">
+                                    <img src="./img/product.jpg" class="img-fluid mr-5 table-img" alt="img">
+                                </div>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">Apple 蘋果 iPhone 15 128G</p>
                             </td>
                             <td>
                                 <p class="mb-0 mt-4">$ 99999</p>
                             </td>
                             <td>
-                                <div class="input-group quantity mt-4" style="width: 100px;">
+                                <div class="input-group quantity mt-4">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border mr-1">
                                             <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm text-center border-0"
+                                    <input type="text" class="form-control form-control-sm text-center w-auto"
                                         value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border ml-1">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <p class="mb-0 mt-4">$ 99999</p>
-                            </td>
-                            <td>
                                 <button class="btn btn-md rounded-circle bg-light border mt-4">
                                     <i class="fa fa-times text-danger"></i>
                                 </button>
                             </td>
-
                         </tr>
                     </tbody>
                 </table>
             </div>
             <hr />
-            <div class="mt-5">
-                <input type="text" class="btn border-1 border-bottom rounded mr-3 py-3" placeholder="輸入優惠券">
-                <button class="btn btn-primary rounded-pill px-3 py-2" type="button">套用
-                    優惠券</button>
-            </div>
             <div class="row g-4 justify-content-end">
-                <div class="col-8"></div>
-                <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4">
+                <div class="col-md-12 col-lg-6 col-xl-8 text-center text-lg-left">
+                    <input type="text" class="btn border-1 border-bottom rounded py-3 w-100 w-md-auto mb-3"
+                        placeholder="輸入優惠券">
+                    <button class="btn btn-dark rounded-pill px-4 py-2 text-center" type="button">套用
+                        優惠券</button>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4 mt-4 mt-xl-0">
                     <div class="bg-light rounded px-3">
                         <div class="p-4">
-                            <h5 class="mb-4 font-weight-bolder">購物車 <span class="fw-normal">總計</span></h5>
-                            <div class="d-flex justify-content-between mb-4">
+                            <h5 class="mb-4 font-weight-bolder">購物車</h5>
+                            <div class="d-flex justify-content-between">
                                 <h5 class="mb-0 mr-4">小計：</h5>
                                 <p class="mb-0">$ 99999</p>
                             </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <p>運送方式</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="mb-0 mr-4">運費：</h5>
-                                <div class="">
-                                    <p class="mb-0">$ 100</p>
-                                </div>
+                                <p class="mb-0 mr-4">數支富超商取貨：</p>
+                                <p class="mb-0">$ 60</p>
                             </div>
                         </div>
-                        <div class="p-4 mb-4 border-top border-bottom d-flex justify-content-between">
-                            <h5 class="mb-0 ps-4 mr-4">合計：</h5>
-                            <p class="mb-0 pe-4">$ 99999</p>
+                        <div class="p-4 border-top d-flex justify-content-between">
+                            <h5 class="mb-0 mr-4">總計：</h5>
+                            <h5 class="mb-0">$ 99999</h5>
                         </div>
                         <a href="./checkout.html"
-                            class="btn btn-dark border-secondary w-100 px-4 py-3 text-white text-uppercase mb-4 ms-4"
+                            class="btn btn-dark border-secondary w-100 px-4 py-3 text-white text-uppercase mb-4"
                             type="button">結帳</a>
-
                     </div>
                 </div>
             </div>

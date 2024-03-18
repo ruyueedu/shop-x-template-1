@@ -36,21 +36,19 @@
                     <li class="nav-item mr-2 dropdown">
                         <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
                             data-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user mr-2"></i>會員中心
+                            會員中心
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./login.html">會員登入</a>
                             <a class="dropdown-item" href="./orders.html">訂單查詢</a>
-                            <a class="dropdown-item" href="./checkout.html">結帳</a>
+                            <a class="dropdown-item" href="#!">登出</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 text-white-100">|</li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white-100" href="./cart.html">
-                            <i class="fas fa-shopping-cart mr-2"></i>購物車
+                        <a class="nav-link btn btn-primary px-4 rounded-pill text-white-100" href="./cart.html">
+                            購物車
                         </a>
                     </li>
-                    <li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
                 </ul>
             </div>
         </div>
@@ -60,7 +58,7 @@
         <div class="container py-5">
             <h1 class="mb-4">結帳</h1>
             <div class="row g-5">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-7">
                     <div class="row mb-3">
                         <div class="col-12">
                             <div class="card bg-light border-0">
@@ -69,29 +67,52 @@
                                         <h2 class="font-weight-bolder ">填寫運送資料</h2>
                                         <hr />
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-item w-100">
-                                            <label class="form-label my-3">姓名<sup>*</sup></label>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-item w-100">
+                                                    <label class="form-label my-3">名字<sup>*</sup></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-item w-100">
+                                                    <label class="form-label my-3">姓氏<sup>*</sup></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="form-label my-3">公司名稱(選填)</label>
                                             <input type="text" class="form-control">
                                         </div>
                                         <div class="form-item">
-                                            <label class="form-label my-3">公司名稱<sup>(選填)</sup></label>
+                                            <label class="form-label my-3">街道地址<sup>*</sup></label>
+                                            <input type="text" class="form-control mb-3" placeholder="門牌號碼與街道名稱">
+                                            <input type="text" class="form-control" placeholder="公寓、套房、單元等(選填)">
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="form-label my-3">鄉鎮市<sup>*</sup></label>
                                             <input type="text" class="form-control">
                                         </div>
                                         <div class="form-item">
-                                            <label class="form-label my-3">地址 <sup>*</sup></label>
+                                            <label class="form-label my-3">縣/市<sup>*</sup></label>
                                             <input type="text" class="form-control">
                                         </div>
                                         <div class="form-item">
-                                            <label class="form-label my-3">行動電話<sup>*</sup></label>
+                                            <label class="form-label my-3">郵遞區號<sup>*</sup></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="form-label my-3">聯絡電話<sup>*</sup></label>
                                             <input type="tel" class="form-control">
                                         </div>
                                         <div class="form-item">
-                                            <label class="form-label my-3">Email 信箱<sup>*</sup></label>
+                                            <label class="form-label my-3">電子郵件地址<sup>*</sup></label>
                                             <input type="email" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
+                                    <div class="col-xl-12">
                                         <div class="form-item">
                                             <label class="form-label my-3">訂單備註</label>
                                             <textarea name="text" class="form-control" spellcheck="false" cols="30"
@@ -103,63 +124,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <div class="card bg-light border-0">
-                                <div class="row p-4">
-                                    <div class="col-12">
-                                        <h2 class="font-weight-bolder ">付款方式</h2>
-                                        <hr />
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-item">
-                                            <select id="payment_type" name="payment_type" class="custom-select my-3">
-                                                <option value="ATM">ATM轉帳</option>
-                                                <option value="FAMILYS">信用卡一次付清</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <div class="card bg-light border-0">
-                                <div class="row p-4">
-                                    <div class="col-12">
-                                        <h2 class="font-weight-bolder ">填寫付款資料</h2>
-                                        <hr />
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-item">
-                                            <label class="form-label my-3">持卡人</label>
-                                            <input type="text" class="form-control" name="name" required />
-                                        </div>
-                                        <div class="form-item">
-                                            <label class="form-label my-3">信用卡號</label>
-                                            <input type="text" class="form-control" name="card_number" id="card_number"
-                                                required />
-                                        </div>
-                                        <div class="form-item">
-                                            <label class="form-label my-3">有效期限</label>
-                                            <input type="date" class="form-control" name="exp_date" id="exp_date"
-                                                required />
-                                        </div>
-                                        <div class="form-item">
-                                            <label class="form-label my-3">背面末三碼</label>
-                                            <input type="password" class="form-control" name="cvv" id="cvv" required />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <div class="bg-light rounded px-3">
-                        <h5 class="pt-4 mb-4 font-weight-bolder">您的訂單</h5>
+
+                <div class="col-md-12 col-lg-5">
+                    <div class="card bg-light rounded-0 mb-4">
+                        <h2 class="ml-4 my-4 font-weight-bolder">您的訂單</h2>
+
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
@@ -168,47 +137,115 @@
                                         <th scope="col">名稱</th>
                                         <th scope="col">價格</th>
                                         <th scope="col">數量</th>
-                                        <th scope="col">小計</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">
-                                            <div class="d-flex align-items-center mt-2">
-                                                <img src="./img/product.jpg" class="img-fluid"
-                                                    style="width: 90px; height: 90px;" alt="">
+                                        <td>
+                                            <div class="d-flex align-items-center mb-0 mt-4">
+                                                <img src="./img/product.jpg" class="img-fluid mr-5 table-img" alt="img">
                                             </div>
-                                        </th>
-                                        <td class="py-5">apple 15</td>
-                                        <td class="py-5">$ 99999</td>
-                                        <td class="py-5">1</td>
-                                        <td class="py-5">$ 99999</td>
+                                        </td>
+                                        <td class="py-0 py-lg-5">Apple 蘋果 iPhone 15 128G</td>
+                                        <td class="py-0 py-lg-5">$ 99999</td>
+                                        <td class="py-0 py-lg-5">1</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 合計 -->
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-4">
+                        <!-- 小計 -->
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
                                 <h5 class="mb-0 mr-4">小計：</h5>
                                 <p class="mb-0">$ 99999</p>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <h5 class="mb-0 mr-4">運費：</h5>
-                                <div class="">
-                                    <p class="mb-0">$ 100</p>
+                        </div>
+                        <!-- 運送方式 -->
+                        <div class="p-4 border-top">
+                            <div>
+                                <h5 class="mb-4">運送方式</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 mr-4">數支富超商取貨：</p>
+                                    <p class="mb-0">$ 60</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 mb-4 border-top border-bottom d-flex justify-content-between">
-                            <h5 class="mb-0 ps-4 mr-4">合計：</h5>
+                        <!-- 超商 -->
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-0">超商</h5>
+                                <div>
+                                    <div class="form-item">
+                                        <select id="payment_type" name="payment_type" class="custom-select mb-2">
+                                            <option value="" selected>--</option>
+                                            <option value="711">711</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item">
+                                        <select id="payment_type" name="payment_type" class="custom-select mb-2">
+                                            <option value="1" selected>取貨不付款</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 總計 -->
+                        <div class="p-4 border-top d-flex justify-content-between">
+                            <h5 class="mb-0 ps-4 mr-4">總計：</h5>
                             <p class="mb-0 pe-4">$ 99999</p>
                         </div>
                     </div>
+                    <!-- 數支付 -->
+                    <div class="card bg-light rounded-0">
+                        <div class="row p-4">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment" id="payment"
+                                        value="option1" checked>
+                                    <label class="form-check-label font-weight-bolder" for="payment">
+                                        數支付
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-item">
+                                    <select id="szfu_payment_type" name="szfu_payment_type" class="custom-select my-3"
+                                        onchange="showDiv(this)">
+                                        <option value="ATM">ATM轉帳</option>
+                                        <option value="FAMILYS">全家超商</option>
+                                        <option value="IBONS">7-11超商</option>
+                                        <option value="HILIFE">萊爾富超商</option>
+                                        <option value="OKMART">OK超商</option>
+                                    </select>
+                                    <!-- 超商門市 -->
+                                    <div class="hidden_div">
+                                        <div class="mt-3">
+                                            <select id="szfu_city" name="szfu_city" class="custom-select">
+                                                <option value="0">--</option>
+                                                <option value="基隆市">基隆市</option>
+                                            </select>
+                                        </div>
+                                        <div class="mt-3">
+                                            <select id="szfu_areas" name="szfu_areas" class="custom-select">
+                                                <option value="0">--</option>
+                                                <option value="中正區">中正區</option>
+                                            </select>
+                                        </div>
+                                        <div class="mt-3">
+                                            <select id="szfu_csv_shop" name="szfu_csv_shop" class="custom-select">
+                                                <option value="[全家超商] 新德店 - 八德路一段43巷2號 #018932#">[全家超商] 新德店 -
+                                                    八德路一段43巷2號 (018932)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row g-4 text-center align-items-center justify-content-center pt-4">
-                        <div class="col-auto ml-auto">
-                            <a href="./checkout.html" type="button"
-                                class="btn btn-dark border-secondary w-100 px-4 py-3 text-white text-uppercase mb-4 ms-4">完成訂單</a>
+                        <div class="col-12">
+                            <a href="./payment.html" type="button"
+                                class="btn btn-dark border-secondary w-100 px-4 py-3 text-white text-uppercase mb-4">完成訂單</a>
                         </div>
                     </div>
                 </div>
@@ -239,6 +276,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script>
+        function showDiv(element) {
+            document.querySelector('.hidden_div').style.display = element.value == "ATM" ? 'none' : 'block';
+        }
+    </script>
 
 </body>
 

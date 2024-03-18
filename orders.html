@@ -36,21 +36,19 @@
                     <li class="nav-item mr-2 dropdown">
                         <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
                             data-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user mr-2"></i>會員中心
+                            會員中心
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./login.html">會員登入</a>
                             <a class="dropdown-item" href="./orders.html">訂單查詢</a>
-                            <a class="dropdown-item" href="./checkout.html">結帳</a>
+                            <a class="dropdown-item" href="#!">登出</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 text-white-100">|</li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white-100" href="./cart.html">
-                            <i class="fas fa-shopping-cart mr-2"></i>購物車
+                        <a class="nav-link btn btn-primary px-4 rounded-pill text-white-100" href="./cart.html">
+                            購物車
                         </a>
                     </li>
-                    <li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
                 </ul>
             </div>
         </div>
@@ -78,7 +76,7 @@
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-xl-6 bg-light">
+                                        <div class="col-md-12 col-xl-6 bg-light">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <thead>
@@ -87,21 +85,18 @@
                                                             <th scope="col">名稱</th>
                                                             <th scope="col">價格</th>
                                                             <th scope="col">數量</th>
-                                                            <th scope="col">小計</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="d-flex align-items-center mt-2">
-                                                                    <img src="./img/product.jpg" class="img-fluid"
-                                                                        style="width: 90px; height: 90px;" alt="">
-                                                                </div>
-                                                            </th>
-                                                            <td class="py-5">apple 15</td>
-                                                            <td class="py-5">$ 99999</td>
-                                                            <td class="py-5">1</td>
-                                                            <td class="py-5">$ 99999</td>
+                                                            <td class="py-2 py-xl-5">
+                                                                <img src="./img/product.jpg" class="table-img"
+                                                                    alt="img">
+                                                            </td>
+                                                            <td class="py-2 py-xl-5">Apple 蘋果 iPhone 15
+                                                                128G</td>
+                                                            <td class="py-2 py-xl-5 text-nowrap">$ 99999</td>
+                                                            <td class="py-2 py-xl-5">1</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -111,20 +106,20 @@
                                                     <h5 class="mb-0 mr-4">小計：</h5>
                                                     <p class="mb-0">$ 99999</p>
                                                 </div>
+                                            </div>
+                                            <div class="p-4 border-top">
+                                                <p>運送方式</p>
                                                 <div class="d-flex justify-content-between">
-                                                    <h5 class="mb-0 mr-4">運費：</h5>
-                                                    <div class="">
-                                                        <p class="mb-0">$ 100</p>
-                                                    </div>
+                                                    <p class="mb-0 mr-4">數支富超商取貨：</p>
+                                                    <p class="mb-0">$ 60</p>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="p-4 mb-4 border-top border-bottom d-flex justify-content-between">
-                                                <h5 class="mb-0 ps-4 mr-4">合計：</h5>
-                                                <p class="mb-0 pe-4">$ 99999</p>
+                                            <div class="p-4 mb-4 border-top d-flex justify-content-between">
+                                                <h5 class="mb-0 mr-4">總計：</h5>
+                                                <h5 class="mb-0">$ 99999</h5>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <div class="col-md-12 col-xl-6">
                                             <div
                                                 class="p-4 d-flex align-items-center justify-content-between border-bottom">
                                                 <p class="font-weight-bolder text-muted mb-0 mr-4">訂單標號</p>
@@ -135,7 +130,7 @@
                                                 <p class="mb-0">***</p>
                                             </div>
                                             <div class="p-4 border-bottom d-flex justify-content-between">
-                                                <p class="mb-0 ps-4 mr-4">連絡電話</p>
+                                                <p class="mb-0 mr-4">連絡電話</p>
                                                 <p class="mb-0">***</p>
                                             </div>
                                             <div class="p-4 border-bottom d-flex justify-content-between">

@@ -37,32 +37,41 @@
                     <li class="nav-item mr-2 dropdown">
                         <a class="nav-link dropdown-toggle text-white-100" href="#" id="navbarDropdown"
                             data-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user mr-2"></i>會員中心
+                            會員中心
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./login.html">會員登入</a>
                             <a class="dropdown-item" href="./orders.html">訂單查詢</a>
-                            <a class="dropdown-item" href="./checkout.html">結帳</a>
+                            <a class="dropdown-item" href="#!">登出</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 text-white-100">|</li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white-100" href="./cart.html">
-                            <i class="fas fa-shopping-cart mr-2"></i>購物車
+                        <a class="nav-link btn btn-primary px-4 rounded-pill text-white-100" href="./cart.html">
+                            購物車
                         </a>
                     </li>
-                    <li class="nav-item mr-2 text-white-100"><i class="fa fa-share-square mr-2"></i>登出</li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--------------------------------------HEADER--------------------------------------->
-
     <!-- Main -->
     <div class="d-md-flex h-md-100 align-items-center">
-        <div class="col-md-12 p-0 bg-white h-md-100 loginarea">
+        <div class="col-md-6 p-0 h-md-100">
+            <div class="d-md-flex align-items-center h-100 p-5 text-center justify-content-center bg-primary shadow">
+                <div class="py-5 px-lg-5 text-white">
+                    <p>
+                        <i class="fas fa-store fa-3x"></i>
+                    </p>
+                    <h1 class="mb-4 mt-3 display-4">購物網站</h1>
+                    <h5 class="mb-4 font-weight-light">已有會員？
+                        <a class="text-primary" href="./login.html">會員登入</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 p-0 bg-white h-md-100">
             <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
-                <form class="border rounded p-5">
+                <div class="border rounded p-5">
                     <h3 class="mb-4 text-center">會員註冊</h3>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -79,11 +88,10 @@
 
                     <button type="submit" class="btn btn-success btn-round btn-block shadow-sm">註冊</button>
                     <small class="d-block mt-4 text-center"><a class="text-gray" href="#">忘記密碼？</a></small>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Main -->
 
     <!--------------------------------------FOOTER--------------------------------------->
     <footer class="footer py-5">
